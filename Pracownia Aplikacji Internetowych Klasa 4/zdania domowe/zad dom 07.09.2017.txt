@@ -1,0 +1,1 @@
+utworz formularz z loginem i has³em, zapisz dane w tablicy
