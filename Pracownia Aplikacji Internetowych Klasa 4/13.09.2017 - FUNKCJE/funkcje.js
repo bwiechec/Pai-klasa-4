@@ -91,13 +91,13 @@ function zadaniePoleITP(){
         if(co3.checked == true){
             
              wynik = 1/3*(pi * (promien*promien) * wysokosc);
-             console.log(wynik);
+              console.log(wynik);
             
          }
             
         else if(co1.checked != true && co2.checked != true && co3.checked != true) document.write('Nie wybrałeś nic!!!');
             
-    console.log(wynik);
+    document.getElementById('wynikDzialania').innerHTML = 'Wynik działania: '+wynik;
 }
 
 
