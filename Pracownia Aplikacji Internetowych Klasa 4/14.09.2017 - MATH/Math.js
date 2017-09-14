@@ -86,3 +86,41 @@ console.log(floorX);
 console.log(floorY);
 console.log(floorZ);
 
+
+//potęgowanie
+
+var p = Math.pow(2,10);
+
+console.log(p);
+
+//random
+
+var losuj = Math.random(); // od 0 do 1
+
+console.log(losuj);
+
+ //z przedziału od 0 do 10
+
+var rand = Math.random() * 10;
+
+var randRound = Math.round(rand);
+
+ //z przedziału od 0 do 10 v2
+
+var rand2 = Math.random() * 11;
+
+var randFloor = Math.floor(rand2);
+
+console.log(randRound);
+console.log(randFloor);
+
+
+
+
+
+
+
+
+
+
+
