@@ -81,7 +81,7 @@ var floorX = Math.floor(x); //-56
 var floorY = Math.floor(y); //-14
 var floorZ = Math.floor(z); //14
 
-
+ 
 console.log(floorX);
 console.log(floorY);
 console.log(floorZ);
