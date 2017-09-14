@@ -117,7 +117,15 @@ console.log(randFloor);
 
 
 
+//losowanie 10 liczb
 
+var liczby = new Array();
+
+for(var i=0; i<10;i++){
+    liczby[i] = Math.round(Math.random() * 90 + 10);
+}
+
+console.log(liczby);
 
 
 
