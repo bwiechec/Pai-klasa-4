@@ -1,4 +1,4 @@
-for(var i = 0; i < 10; i++){
+/*for(var i = 0; i < 10; i++){
     document.write(i+ ' ');
     if(i==7){
         break;
@@ -11,6 +11,61 @@ for(var i = 1; i <=10; i++){
     }else{
         document.write(i + " razy <br>");
     }
+}*/
+
+/*
+uzytkownik podaje z klawiatury wartosc poczatkowa i koncowa petli,
+    po kazdej liczbie dodaj przecinek, a tylko po ostatniej 
+    liczbie podaj kropke. pierwsza liczba musi byc mniejsza od drugiej*/
+
+
+/*
+var x = prompt("Podaj pierwszą liczbę", "np. 1");
+var y = prompt("Podaj drugą liczbę (musi byc wieksza od pierwszej)", "np. 2");
+
+x = Number(x);
+y = Number(y);
+
+
+for(x;x<=y;x++){
+    if(x==y){
+        document.write(x+".");
+    }else{
+        document.write(x +", ");
+    }
 }
+*/
+
+//petla while
+
+/*
+var i = 0;
+
+while(i++ < 5){
+    document.write(i + '<br>');
+}
+*/
+var wiek1 = 18;
+/*var wiek = prompt('Podaj wiek: ');
 
 
+
+while(wiek != wiek1){
+    var wiek = prompt('Podaj wiek: ');
+    
+}
+if(wiek == wiek1){
+        document.write('Masz 18 lat');
+    }*/
+
+
+// do while
+
+do{
+    
+    var wiek = prompt('Podaj wiek: ');
+    if(wiek == wiek1){
+        document.write('Masz 18 lat');
+    }
+    
+}while(wiek != wiek1)
