@@ -61,18 +61,44 @@ var wynik;
 var pi = Math.PI;
 console.log(pi);
 
-var doc = document.getElementById;
+
 
 function zadaniePoleITP(){
     
-    
+    var doc = document.forms['form'];
     var promien = document.getElementById('r').value;
     console.log(promien);
     var wysokosc = document.getElementById('h').value;
     console.log(wysokosc);
+    var wybor = Number(doc.wybor.value);
     
     Number(promien);
     Number(wysokosc);
+    switch(wybor){
+            
+        case 1:
+            wynik = pi * (promien*promien);
+            console.log(wynik);
+            document.getElementById('wynikDzialania').innerHTML = 'Wynik działania: '+wynik;
+            break; 
+        case 2:
+            wynik = 2 * pi *promien;
+            console.log(wynik);
+            document.getElementById('wynikDzialania').innerHTML = 'Wynik działania: '+wynik;
+            break; 
+        case 3:
+            wynik = 1/3*(pi * (promien*promien) * wysokosc);
+            console.log(wynik); 
+            document.getElementById('wynikDzialania').innerHTML = 'Wynik działania: '+wynik;
+            break;
+        default:
+            document.getElementById('wynikDzialania').innerHTML = 'Nie wybrałeś nic!!!';
+            break;
+            
+            
+            
+    }
+    /*
         if(co1.checked == true){
             
             wynik = pi * (promien*promien);
@@ -95,9 +121,7 @@ function zadaniePoleITP(){
             
          }
             
-        else if(co1.checked != true && co2.checked != true && co3.checked != true) document.write('Nie wybrałeś nic!!!');
-            
-    document.getElementById('wynikDzialania').innerHTML = 'Wynik działania: '+wynik;
+        else if(co1.checked != true && co2.checked != true && co3.checked != true) document.getElementById('wynikDzialania').innerHTML = 'Nie wybrałeś nic!!!';*/
 }
 
 
