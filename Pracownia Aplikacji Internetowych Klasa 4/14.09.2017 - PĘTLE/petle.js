@@ -61,6 +61,7 @@ if(wiek == wiek1){
 
 // do while
 
+/*
 do{
     
     var wiek = prompt('Podaj wiek: ');
@@ -69,3 +70,19 @@ do{
     }
     
 }while(wiek != wiek1)
+*/
+
+
+/*podaj 5 liczb podzielnych przez 2 z klawiatury. 
+zapisz je do tablicy i wyswietl na stronie.*/
+
+var podane = [];
+
+for(var x = 0; x<5; x++){
+    do{
+        podane[x] = prompt("Podaj liczbę podzielna przez 2");
+    }while(podane[x]%2!=0)
+}
+
+document.write(podane);
+
