@@ -45,7 +45,7 @@ while(i++ < 5){
     document.write(i + '<br>');
 }
 */
-var wiek1 = 18;
+//var wiek1 = 18;
 /*var wiek = prompt('Podaj wiek: ');
 
 
@@ -76,7 +76,7 @@ do{
 /*podaj 5 liczb podzielnych przez 2 z klawiatury. 
 zapisz je do tablicy i wyswietl na stronie.*/
 
-var podane = [];
+/*var podane = [];
 
 for(var x = 0; x<5; x++){
     do{
@@ -84,5 +84,71 @@ for(var x = 0; x<5; x++){
     }while(podane[x]%2!=0)
 }
 
-document.write(podane);
+document.write(podane);*/
+
+//uzytkownik podaje z klawiatury liczbe zabezpiecz przed podaniem litery, lub znaku specjalnego
+/*for(var i=0;i<10;i++){ 
+document.write('<input type="text" id="liczba'+ i +'"> <br>');
+}
+document.write('<button id="przycisk">Wyślij</button>');
+
+var elPrzycisk = document.getElementById('przycisk');
+var elLiczba = document.getElementById('liczba');
+
+
+elPrzycisk.onclick = function (){
+    var wartosc = elLiczba.value;
+    if(!isNaN(wartosc)){
+        console.log(wartosc);
+    }
+}*/
+
+//program wyświetlający liczby 1-10 w pieciu rzędach. po kazdej liczbie ma być przecinek a po ostatniej w kazdym rzędzie ma byc kropka.
+
+/*for(var i = 0; i<5;i++){
+    for(var j=1;j<=10;j++){
+        if(j==10)document.write(j+'.');
+        else document.write(j+", ");
+    }
+    document.write('<br>');
+}*/
+
+
+//dom uzytkownik podaje z klawiatury maksymalna ilosc gwiazdek zrob petle w ktorej zabezpieczysz przed podaniem błędnych danych użytkownik moze rownież w formularzu podac inny znak jaki chce wyświetlić na ekranie
+
+//dla chetnych jeszcze zeby bylo lustrzane odbicie tego
+
+
+
+
+//użytkownik podaje login i hasło z klawiatury. Jeśli login to janusz a hasło to okoń na ekranie wyświetli sie w kolorze czerwonym hasło. Jeśli hasło będzie błędne to w kolorze niebieskim wyświetli się: Błędne hasło
+
+
+
+var elLogin = document.getElementById('login'); 
+var elHaslo = document.getElementById('haslo'); 
+var elPrzycisk = document.getElementById('loguj');
+var elWynik = document.getElementById('wynik');
+
+
+elPrzycisk.onclick = function (){
+    var login = elLogin.value;
+    var haslo = elHaslo.value;
+    
+    if(login=='Janusz' && haslo=='okoń'){
+        elWynik.style.color = 'red';
+        elWynik.textContent = haslo;
+    }
+    else{
+        elWynik.style.color = 'blue';
+        elWynik.textContent = 'Błędne hasło'; 
+    }
+}
+
+
+
+
+
+
+
 
