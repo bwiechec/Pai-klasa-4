@@ -38,16 +38,24 @@ console.log(elAuta);
 //Metoda querySelector()
 //zwraca pierwsze dopasowanie
 
-var elImie = document.querySelector('li#i2');
+/*var elImie = document.querySelector('li#i2');
 
-elImie.className= 'zielony';
+elImie.className= 'zielony';*/
 
 //metoda querySelectorAll()
 
-var elImiona = document.querySelectorAll('li.grey');
+/*var elImiona = document.querySelectorAll('li.grey');
 console.log(elImiona);
-elImiona[0].className = 'zielony';
+elImiona[0].className = 'zielony';*/
 
 
 
 //ZAD DOM ZMIEN WSZYSTKIE ELEMENTY W LISCIE Z IMIONAMI NA CZERWONE WYKORZYSTAJ METODĘ FOREACH 
+
+var elSzare = document.querySelectorAll('li.grey')
+
+function p(a){
+    a.className = 'czerwony';
+}
+
+elSzare.forEach(p);
