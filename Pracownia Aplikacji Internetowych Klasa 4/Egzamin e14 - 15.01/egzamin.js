@@ -69,7 +69,7 @@ elPotegowanie.onclick = function(){
     var liczbaPod = parseFloat(form2.pdst.value);
     var liczba2 = parseFloat(form2.wykl.value);
     if(isNaN(liczbaPod) || isNaN(liczba2)) liczba = 'Wpisz podstawę i wykładnik potęgi.';
-    else if(liczba2 != Math.abs(liczba2)) liczba = 'Wykładnik potęgi musi być dodatni.';
-    else liczba = 'Wynik wynosi: ' + Math.pow(liczbaPod, liczba2); 
+    else if(liczba2 < 0) liczba = 'Wykładnik potęgi musi być dodatni.';
+    else liczba = 'Wynik działania wynosi: ' + Math.pow(liczbaPod, liczba2); 
     elWynik2.textContent = liczba;
 }
