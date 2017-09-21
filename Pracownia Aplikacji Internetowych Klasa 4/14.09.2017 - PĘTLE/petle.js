@@ -125,7 +125,7 @@ elPrzycisk.onclick = function (){
 
 
 
-var elLogin = document.getElementById('login'); 
+/*var elLogin = document.getElementById('login'); 
 var elHaslo = document.getElementById('haslo'); 
 var elPrzycisk = document.getElementById('loguj');
 var elWynik = document.getElementById('wynik');
@@ -143,11 +143,24 @@ elPrzycisk.onclick = function (){
         elWynik.style.color = 'blue';
         elWynik.textContent = 'Błędne hasło'; 
     }
+}*/
+
+
+
+//forEach
+
+var tab = ['Anna','Adrian','Janusz','Andrzej'];
+
+/*for(var i=0;i<=tab.length-1;i++){
+    document.write(tab[i]);
+}*/
+
+
+/*function p(wartosc, indeks){
+    document.write(indeks+1+' element tablicy ' + wartosc+'<br>');
 }
 
-
-
-
+tab.forEach(p);*/
 
 
 
