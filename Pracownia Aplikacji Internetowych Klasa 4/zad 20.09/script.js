@@ -22,10 +22,12 @@ elPrzycisk.onclick = function(){
             napis = napis + rodzaj;
                              }
         napis =napis + "<br>";
+        console.log(i);
         }
-  
-    for(i;i>=0;i--){
-        for(j=0;j<i;j++) {
+    console.log(i);
+        i--;
+    for(i;i>0;i--){
+        for(j=1;j<i;j++) {
             napis = napis + rodzaj;
                              }
         napis =napis + "<br>";
