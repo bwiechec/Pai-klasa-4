@@ -52,10 +52,61 @@ elImiona[0].className = 'zielony';*/
 
 //ZAD DOM ZMIEN WSZYSTKIE ELEMENTY W LISCIE Z IMIONAMI NA CZERWONE WYKORZYSTAJ METODĘ FOREACH 
 
-var elSzare = document.querySelectorAll('li.grey')
+/*var elSzare = document.querySelectorAll('li.grey');
 
-function p(a){
-    a.className = 'czerwony';
+function p(imie){
+    imie.className = 'czerwony';
 }
 
-elSzare.forEach(p);
+elSzare.forEach(p);*/
+
+//previousElementSibling, nextElementSibling 
+
+var poczatekElem  = document.getElementById('ks2');
+
+poczatekElem.className = 'zielony';
+
+var poprzedniElem = poczatekElem.previousElementSibling;
+
+poprzedniElem.className = 'czerwony';
+
+var nastepnyElem = poczatekElem.nextElementSibling;
+
+nastepnyElem.className = 'czerwony';
+
+//firstChild, lastChild
+
+var lista = document.getElementsByTagName('ul')[2];
+
+var pierwszy = lista.firstElementChild;
+
+//pierwszy.className = 'zielony';
+
+var ostatni = lista.lastElementChild;
+
+//ostatni.className = 'czerwony';
+
+pierwszy.setAttribute('class','zielony');
+
+//**************************************************************************
+
+//zmień pierwszy element input na button i przypisz mu wartość wyślij
+
+
+var input = document.getElementsByTagName('input')[0];
+
+console.log(input);
+
+input.setAttribute('type','button');
+
+input.value = 'Wyślij';
+
+
+//tekst www laczy ze stroną szkoły zsk
+
+var elA = document.getElementById('link');
+
+elA.setAttribute('href','http://www.zsk.poznan.pl');
+elA.setAttribute('target','_blank');
+
+
