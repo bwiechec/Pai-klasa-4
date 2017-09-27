@@ -71,7 +71,7 @@ function mail(){
 function blokujHaslo(){
     elHaslo2.disabled = false;
     elHaslo.disabled = true;
-    elHaslo2.focus();this
+    elHaslo2.focus();
 }
 function haslo(){
     if(elHaslo.value != this.value){
@@ -100,16 +100,13 @@ function regulamin(){
         }
 }
 function zatwierdz(){
-    alert('wyslano');
-    elRegulamin.checked = false;
-    elMail1.disabled = false;
-    elMail2.disabled = true;
-    elHaslo.disabled = false;
-    elHaslo2.disabled = true;
-    elKomunikat.textContent = '';
-    elImie.focus();
-   var input = document.getElementsByTagName('input');
-    for(var i = 0; i<input.length;i++) input[i].value = '';
+   document.write('<div>');
+   document.write('Imie: '+'<span class="kolor">'+elImie.value + '</span><br>');
+   document.write('Nazwisko: '+'<span class="kolor">'+elNazwisko.value'</span><br>');
+   document.write('Login: '+'<span class="kolor">'+elLogin.value + '</span><br>');
+   document.write('Mail: '+'<span class="kolor">'+elMail1.value + '</span><br>');
+   document.write('Data urodzenia: '+'<span class="kolor">'+elData.value + '</span><br>');
+   document.write('</div>');
     
 }
 
