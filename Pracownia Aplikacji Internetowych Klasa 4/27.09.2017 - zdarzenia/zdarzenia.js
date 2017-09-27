@@ -93,22 +93,33 @@ function haslo(){
 }
 
 function regulamin(){
+    if(elRegulamin.checked){
     elPrzycisk.disabled = false;
+        }else{
+            elPrzycisk.disabled = true;
+        }
 }
-function czysc(){
-   var input = document.getElementsByTagName('input');
-    for(var i = 0; i<input.length;i++) input[i].value = '';
-    elRegulamin.checked = false;
-}
-
 function zatwierdz(){
-    elImie.autofocus = true;
+    alert('wyslano');
+    elRegulamin.checked = false;
     elMail1.disabled = false;
     elMail2.disabled = true;
     elHaslo.disabled = false;
     elHaslo2.disabled = true;
-    alert('wyslano');
-    czysc();
+    elKomunikat.textContent = '';
+    elImie.focus();
+   var input = document.getElementsByTagName('input');
+    for(var i = 0; i<input.length;i++) input[i].value = '';
+    
+}
+
+function popraw(){
+    var zablokowane = document.querySelectorAll('input[disabled]');
+    if(zablokowane.length > 0){
+        for(var i = 0; i < zablokowane.length; i++){
+            zablokowane[i].disabled = false;
+        }
+    }
 }
 
 elImie.addEventListener('blur', sprawdz);
@@ -120,4 +131,4 @@ elHaslo.addEventListener('blur', blokujHaslo);
 elHaslo2.addEventListener('blur', haslo);
 elRegulamin.addEventListener('click', regulamin);
 elPrzycisk.addEventListener('click', zatwierdz);
-elPopraw.addEventListener('click', czysc);
+elPopraw.addEventListener('click', popraw);
