@@ -110,7 +110,7 @@ console.log(sprawdz);
 
 var pliki = 'plik.mp3 arkusz.csv muzyka.mp3 tekst.txt'
 
-var regEx1 = /(\w+\.mp3)/g
+var regEx1 = /(\w+\.mp3)/g;
 
 var sprawdz = pliki.match(regEx1);
 
