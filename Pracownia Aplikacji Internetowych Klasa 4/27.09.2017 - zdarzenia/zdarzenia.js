@@ -101,13 +101,12 @@ function regulamin(){
 }
 function zatwierdz(){
    document.write('<div>');
-   document.write('Imie: '+'<span class="kolor">'+elImie.value + '</span><br>');
+   /*document.write('Imie: '+'<span class="kolor">'+elImie.value + '</span><br>');
    document.write('Nazwisko: '+'<span class="kolor">'+elNazwisko.value'</span><br>');
    document.write('Login: '+'<span class="kolor">'+elLogin.value + '</span><br>');
    document.write('Mail: '+'<span class="kolor">'+elMail1.value + '</span><br>');
-   document.write('Data urodzenia: '+'<span class="kolor">'+elData.value + '</span><br>');
+   document.write('Data urodzenia: '+'<span class="kolor">'+elData.value + '</span><br>');*/
    document.write('</div>');
-    
 }
 
 function popraw(){
