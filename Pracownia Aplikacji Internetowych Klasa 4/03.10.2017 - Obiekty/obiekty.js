@@ -64,7 +64,7 @@ var produkt = {};
 
 //sprawdzamy czy właściwość istnieje
 
-console.log(typeof(produkt.nazwa)); //undefined
+//console.log(typeof(produkt.nazwa)); //undefined
 
 //dodawanie wlasciwosci i metod
 
@@ -73,19 +73,35 @@ produkt.firma = 'bosh';
 produkt.model = 'WAK2024PI';
 produkt.waga = 8;
 produkt.cena = 1500;
-produkt.wyswietl = function(){
+/*produkt.wyswietl = function(){
     return 'Nazwa produktu: ' + this.nazwa + '<br>Firma: ' + this.firma + '<br>Model: ' + this.model + '<br>Waga: ' + this.waga + '<br>Cena: ' + this.cena+'zł';
-}
+}*/
 
 //console.log(produkt.wyswietl());
-document.write(produkt.wyswietl());
+/*document.write(produkt.wyswietl());
 console.log(typeof(produkt.nazwa)); // string
 console.log(typeof(produkt.waga)); // number
-console.log(typeof(produkt.wyswietl)); //function
+console.log(typeof(produkt.wyswietl)); //function*/
 
 //DOM PRZEROBIĆ metode wyswietl dla obiektu produkt (forEach albo forIn)
 
+console.log(typeof(produkt)); //object
 
+/*function tekst2(z){
+    var opis;
+    if(typeof(z)== 'string' || typeof(z)=='number'){
+        document.write(z + '<Br>');
+    }
+}*/
+var opis = '';
+for (var x in produkt){
+    
+    if(typeof(produkt[x])== 'string' || typeof(produkt[x])=='number'){
+        opis += x + ': '+produkt[x] + '<Br>';
+    }
+}
+
+document.write(opis);
 
 
 

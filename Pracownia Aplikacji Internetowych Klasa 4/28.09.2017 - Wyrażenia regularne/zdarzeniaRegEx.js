@@ -29,6 +29,8 @@ function sprawdzImie(){
     var sprawdz = regImie.test(this.value);
     if(sprawdz){
         elKomunikat.textContent = '';
+        var imie = this.value[0].toUpperCase() + this.value.slice(1).toLowerCase();
+        elImie.value = imie;
     }else{
         elKomunikat.textContent = "Błędne imie";
         this.focus();
@@ -39,6 +41,21 @@ function sprawdzNazwisko(){
     var sprawdz = regNazwisko.test(this.value);
     if(sprawdz){
         elKomunikat.textContent = '';
+        var i=0;
+        while(i<this.value.length){
+            if(i==0)
+            var nazwisko = this.value[i].toUpperCase();
+            else{
+                if(this.value[i]=='-'){
+                    nazwisko += this.value[i] + this.value[i+1].toUpperCase();
+                    i++
+                }else{
+                    nazwisko += this.value[i].toLowerCase();
+                }
+            }
+            i++;
+        }
+        elNazwisko.value = nazwisko;
     }else{
         elKomunikat.textContent = "Błędne nazwisko";
         this.focus();
