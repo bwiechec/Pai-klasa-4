@@ -1,4 +1,4 @@
-//ZAD DOM ZAMIENIC IMIE I NAZWISKO TAK ABY PIERWSZE LITERY BYLY DUZE W NAZWISKU TEZ TE PO MYŚLNIKU
+//ZAD DOM ZAMIENIC IMIE I NAZWISKO TAK ABY PIERWSZE LITERY BYLY DUZE W NAZWISKU TEZ TE PO MYŚLNIKU DATA MUSI BYC MNIEJSZA OD DATY DZISIEJSZEJ
 
 
 var elImie = document.getElementById('imie');
@@ -58,10 +58,10 @@ function sprawdzLogin(){
 function blokujMail(){
     var sprawdz = regMail.test(elMail1.value);
     if(sprawdz){
-    elMail2.disabled = false;
-    elMail1.disabled = true;
+        elMail2.disabled = false;
+        elMail1.disabled = true;
         elKomunikat.textContent = '';
-    elMail2.focus();
+        elMail2.focus();
         }else{
             elKomunikat.textContent = 'Mail nie spełnia wymagań';
             elMail1.focus();
@@ -90,14 +90,14 @@ function mail(){
 function blokujHaslo(){
     var sprawdz = regHaslo.test(elHaslo.value);
     if(sprawdz){
-    elHaslo2.disabled = false;
-    elHaslo.disabled = true;
-    elHaslo2.focus();
+        elHaslo2.disabled = false;
+        elHaslo.disabled = true;
+        elHaslo2.focus();
         elKomunikat.textContent = ''
-        }else{
-            elKomunikat.textContent = 'Hasło nie spełnia wymagań';
-            elHaslo.focus();
-        }
+    }else{
+        elKomunikat.textContent = 'Hasło nie spełnia wymagań';
+        elHaslo.focus();
+    }
 }
 function haslo(){
     if(elHaslo.value != this.value){
