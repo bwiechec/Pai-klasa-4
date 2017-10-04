@@ -106,7 +106,7 @@ var sprawdz = regEx.exec(tekst);
 
 console.log(sprawdz);
 
-//match
+//match lepsiejsze niz exec()
 
 var pliki = 'plik.mp3 arkusz.csv muzyka.mp3 tekst.txt'
 
